@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 export const rootRouterConfig: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
+
+  { path:'test',component:AboutComponent},
   { path: 'about', component: AboutComponent },
   { path: 'github', component: RepoBrowserComponent,
     children: [

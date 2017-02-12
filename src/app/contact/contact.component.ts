@@ -10,7 +10,6 @@ import CustomValidators from '../forms/CustomValidators';
 export class ContactComponent implements OnInit {
   contactForm: FormGroup;
   constructor(private formBuilder: FormBuilder) {}
-
   ngOnInit() {
     this.contactForm = this.formBuilder.group({
       name: ['', Validators.required],

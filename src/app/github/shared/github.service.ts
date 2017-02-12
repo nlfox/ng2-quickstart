@@ -20,8 +20,7 @@ export class GithubService {
 
   private makeRequest(path: string) {
     let params = new URLSearchParams();
-    params.set('per_page', '100');
-
+    params.set('per_page', '10');
     let url = `https://api.github.com/${ path }`;
     return this.http.get(url, {search: params})
       .map((res) => res.json());
